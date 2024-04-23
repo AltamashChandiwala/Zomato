@@ -1,177 +1,142 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="icon" href="images/Zomato_logo.png"/>
-        <title>Zomato</title>
-    </head>
-    <body>
-        <header>
-            <div id="header">
-                <div id="logo">
-                    <img src="images/logo.png" alt="Zomato logo"/>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
             </div>
-            <hr/>
-            <div class="restro">Mumbai Restaurants</div>           
-        </header>
-        <div class="main">
-            <div class="filters">
-                <details>
-                    <summary>FILTERS</summary>
-                    <div class="sort"><h3>Sort by</h3>
-                        <div>
-                            <input type="checkbox" />
-                            <span>Popularity</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" />
-                            <span>Rating: High to Low</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" />
-                            <span>Delivery Time</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" />
-                            <span>Cost: High to Low</span>
-                        </div>
-                        <div>
-                            <input type="checkbox" />
-                            <span>Cost: Low to High</span>
+            <ul class="nav-links">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+      </header>
+
+            <h2 class="heading">Discover the best foods & drinks in Toronto</h2>
+
+    <main class="container my-5">
+        <section class="row g-4">
+            <!-- Cards Section -->
+            <div class="col-lg-4 col-md-6">
+                <a href="./listing.html" target="_blank" class="text-decoration-none">
+                    <div class="card shadow hover-zoom">
+                        <img src="images/chole.jpg" class="card-img-top" alt="Chole Bhature">
+                        <div class="card-body">
+                            <h5 class="card-title">Order online</h5>
+                            <p class="card-text">Stay home and order to your doorsteps.</p>
                         </div>
                     </div>
-
-                    <div class="select">
-                        <h3>Cost For Two</h3>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">Less than &#8377; 500</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 500 to &#8377; 1000</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 1000 to &#8377; 1500</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 1500 to &#8377; 2000</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 2000 +</span>
-                    </div>
-                    </div> 
-                </details>
+                </a>
             </div>
-            <hr/>
-            <div class="main1">
-            <div class="row">
-                <div class="card">
-                    <img src="images/1.jpg" alt="Pizza Hut">
-                    <div class="name">La Pino'z Pizza</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
-                </div>
-                <div class="card">
-                    <img src="images/2.jpg" alt="Smokin' Joe's">
-                    <div class="name">Smokin' Joe's Pizza</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
-                </div>
-                <div class="card">
-                    <img src="images/3.jpg" alt="Dominos">
-                    <div class="name">Domino's Pizza</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow hover-zoom">
+                    <img src="images/dining.jpg" class="card-img-top" alt="Dining">
+                    <div class="card-body">
+                        <h5 class="card-title">Dining</h5>
+                        <p class="card-text">View the city's favorite dining venues.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="card">
-                    <img src="images/4.jpg" alt="MOJO Pizza - 2X Toppings">
-                    <div class="name">MOJO Pizza - 2X Toppings</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
-                </div>
-                <div class="card">
-                    <img src="images/5.jpg" alt="Sbarro - New York Pizza">
-                    <div class="name">Sbarro - New York Pizza</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
-                </div>
-                <div class="card">
-                    <img src="images/6.jpg" alt="Francesco's Pizzeria">
-                    <div class="name">Francesco's Pizzeria</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow hover-zoom">
+                    <img src="images/club.png" class="card-img-top" alt="Clubs">
+                    <div class="card-body">
+                        <h5 class="card-title">Nightlife and Clubs</h5>
+                        <p class="card-text">Explore the city's top nightlife outings.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row">
-                <div class="card">
-                    <img src="images/7.jpg" alt="Nomad Pizza- Traveller Series">
-                    <div class="name">Nomad Pizza- Traveller Series</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
+        <hr class="my-5">
+
+        <!-- Collections Section -->
+        <section class="text-center">
+            <h2>Collections</h2>
+            <p class="lead">Explore curated lists of top restaurants, cafes, pubs, and bars in Toronto, based on trends</p>
+            <div class="row gy-4">
+                <!-- Newly Opened -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="./MenuPage.html" target="_blank" class="text-decoration-none">
+                        <div class="card hover-zoom shadow">
+                            <img src="./images/swato.jpeg" class="card-img-top" alt="Newly Opened">
+                            <div class="card-body">
+                                <h5 class="card-title">Newly Opened</h5>
+                                <p class="card-text">Discover the latest hotspots in the city.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <img src="images/8.jpg" alt="Starboy Pizza & Shakes">
-                    <div class="name">Starboy Pizza & Shakes</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
+                <!-- Best of Mumbai -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="./MenuPage.html" target="_blank" class="text-decoration-none">
+                        <div class="card hover-zoom shadow">
+                            <img src="images/dine.jpeg" class="card-img-top" alt="Best of Mumbai">
+                            <div class="card-body">
+                                <h5 class="card-title">Best of Mumbai</h5>
+                                <p class="card-text">Explore the iconic places loved by locals.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <img src="images/9.jpg" alt="Lil Gamby Pizza Shop">
-                    <div class="name">Lil Gamby Pizza Shop</div>
-                    <div class="star">4.0&star;</div>
-                    <div class="text">Italian, Pizza, Past, Fast Food</div>
-                    <div class="rtext">150 for one</div>
-                    <hr/>
-                    <div class="info">6300+ order are placed from here</div>
-                    <div class="safety"><img src="images/safety.png" alt="safety label"/></div>
+                <!-- Trending This Week -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="./MenuPage.html" target="_blank" class="text-decoration-none">
+                        <div class="card hover-zoom shadow">
+                            <img src="images/trending.jpeg" class="card-img-top" alt="Trending This Week">
+                            <div class="card-body">
+                                <h5 class="card-title">Trending This Week</h5>
+                                <p class="card-text">Check out what's trending in the city right now.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Work-Friendly Places -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="./MenuPage.html" target="_blank" class="text-decoration-none">
+                        <div class="card hover-zoom shadow">
+                            <img src="images/work.jpeg" class="card-img-top" alt="Work-Friendly Places">
+                            <div class="card-body">
+                                <h5 class="card-title">Work-Friendly Places</h5>
+                                <p class="card-text">Perfect spots to get work done while enjoying good food.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            </div>
-        </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+              <h4>Contact Us</h4>
+              <p>Email: info@example.com</p>
+              <p>Phone: +1 234 567 890</p>
+              <p>Address: 123 Main Street, City</p>
+          </div>
+          <div class="social-links">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
 
-        <footer>
-
-        </footer>
-    </body>
+    <script src="index.js"></script>
+</body>
 </html>

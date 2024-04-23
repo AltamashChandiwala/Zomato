@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Data</title>
+</head>
+<body>
+    <h1>Sign Up Data</h1>
+    <div id="signup-info"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    $(document).ready(function() {
+    // Retrieve sign-up data from local storage
+    const storedSignUpData = localStorage.getItem('signUpData');
+
+    if (storedSignUpData) {
+        // Parse the stored data from JSON to an object
+        const signUpData = JSON.parse(storedSignUpData);
+
+        // Create HTML content to display the sign-up data
+        const signUpInfo = `
+            <p><strong>First Name:</strong> ${signUpData.firstName}</p>
+            <p><strong>Last Name:</strong> ${signUpData.lastName}</p>
+            <p><strong>Email:</strong> ${signUpData.email}</p>
+            <!-- You may display other sign-up data here -->
+        `;
+
+        // Display the sign-up data in the specified div
+        $('#signup-info').html(signUpInfo);
+    } else {
+        // Display a message if no sign-up data is found
+        $('#signup-info').html('<p>No sign-up data found.</p>');
+    }
+});
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</script>
+</html>
